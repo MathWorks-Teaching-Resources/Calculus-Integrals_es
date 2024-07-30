@@ -229,7 +229,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.WelcomeTitle.FontWeight = 'bold';
             app.WelcomeTitle.FontColor = [0.850980392156863 0.850980392156863 0.850980392156863];
             app.WelcomeTitle.Position = [2 349 274 70];
-            app.WelcomeTitle.Text = 'Welcome to Calculus: Integrals';
+            app.WelcomeTitle.Text = 'Bienvenido a Cálculo: Integrales';
 
             % Create MainMenuButton
             app.MainMenuButton = uibutton(app.WelcomeTab, 'push');
@@ -238,7 +238,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.MainMenuButton.FontSize = 18;
             app.MainMenuButton.FontColor = [0.850980392156863 0.850980392156863 0.850980392156863];
             app.MainMenuButton.Position = [59 96 161 35];
-            app.MainMenuButton.Text = 'Main Menu';
+            app.MainMenuButton.Text = 'Menú Principal';
 
             % Create ReviewUsButton
             app.ReviewUsButton = uibutton(app.WelcomeTab, 'push');
@@ -247,7 +247,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.ReviewUsButton.FontSize = 18;
             app.ReviewUsButton.FontColor = [0.850980392156863 0.850980392156863 0.850980392156863];
             app.ReviewUsButton.Position = [59 10 161 35];
-            app.ReviewUsButton.Text = 'Review Us';
+            app.ReviewUsButton.Text = 'Evalúanos';
 
             % Create READMEButton
             app.READMEButton = uibutton(app.WelcomeTab, 'push');
@@ -256,7 +256,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.READMEButton.FontSize = 18;
             app.READMEButton.FontColor = [0.850980392156863 0.850980392156863 0.850980392156863];
             app.READMEButton.Position = [59 53 161 35];
-            app.READMEButton.Text = 'README';
+            app.READMEButton.Text = 'LEEME';
 
             % Create Image
             app.Image = uiimage(app.WelcomeTab);
@@ -279,7 +279,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.ReviewText.FontSize = 18;
             app.ReviewText.FontColor = [0.850980392156863 0.850980392156863 0.850980392156863];
             app.ReviewText.Position = [16 243 245 69];
-            app.ReviewText.Text = 'Plese help us improve your experience by answering a few questions.';
+            app.ReviewText.Text = 'Por favor, ayúdanos a mejorar tu experiencia respondiendo algunas preguntas.';
 
             % Create ReviewTitle
             app.ReviewTitle = uilabel(app.TabReview);
@@ -290,7 +290,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.ReviewTitle.FontWeight = 'bold';
             app.ReviewTitle.FontColor = [0.850980392156863 0.850980392156863 0.850980392156863];
             app.ReviewTitle.Position = [2 326 274 93];
-            app.ReviewTitle.Text = 'Welcome to Calculus: Integrals';
+            app.ReviewTitle.Text = 'Bienvenido a Cálculo: Integrales';
 
             % Create Q1
             app.Q1 = uilabel(app.TabReview);
@@ -301,7 +301,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.Q1.FontWeight = 'bold';
             app.Q1.FontColor = [0.850980392156863 0.850980392156863 0.850980392156863];
             app.Q1.Position = [16 141 245 69];
-            app.Q1.Text = 'What describe you best?';
+            app.Q1.Text = '¿Qué te describe mejor?';
 
             % Create FacultyButton
             app.FacultyButton = uibutton(app.TabReview, 'push');
@@ -310,7 +310,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.FacultyButton.FontSize = 18;
             app.FacultyButton.FontColor = [0.850980392156863 0.850980392156863 0.850980392156863];
             app.FacultyButton.Position = [64 127 150 40];
-            app.FacultyButton.Text = 'Faculty';
+            app.FacultyButton.Text = 'Profesorado';
 
             % Create StudentButton
             app.StudentButton = uibutton(app.TabReview, 'push');
@@ -319,7 +319,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.StudentButton.FontSize = 18;
             app.StudentButton.FontColor = [0.850980392156863 0.850980392156863 0.850980392156863];
             app.StudentButton.Position = [64 80 150 40];
-            app.StudentButton.Text = 'Student';
+            app.StudentButton.Text = 'Estudiante';
 
             % Create OtherButton
             app.OtherButton = uibutton(app.TabReview, 'push');
@@ -328,7 +328,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             app.OtherButton.FontSize = 18;
             app.OtherButton.FontColor = [0.850980392156863 0.850980392156863 0.850980392156863];
             app.OtherButton.Position = [64 34 150 40];
-            app.OtherButton.Text = 'Other';
+            app.OtherButton.Text = 'Otro';
 
             % Show the figure after all components are created
             app.UIFigure.Visible = 'on';
