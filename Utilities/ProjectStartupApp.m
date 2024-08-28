@@ -151,7 +151,7 @@ classdef ProjectStartupApp < matlab.apps.AppBase
             elseif event.Source == app.OtherButton
                 open MainMenu.mlx
             else
-                disp("Thank you for your time.")
+                disp("Gracias por tu tiempo.")
             end
             delete(app)
         end
