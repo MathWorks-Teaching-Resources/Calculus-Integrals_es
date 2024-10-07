@@ -2,70 +2,70 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
 
     % Properties that correspond to app components
     properties (Access = public)
-        CalculusFlashcardsAppUIFigure  matlab.ui.Figure
-        GridLayout                     matlab.ui.container.GridLayout
-        TabGroup                       matlab.ui.container.TabGroup
-        ConfiguracinTab                matlab.ui.container.Tab
-        GridLayout12                   matlab.ui.container.GridLayout
-        GridLayout22                   matlab.ui.container.GridLayout
-        SettingsMessage                matlab.ui.control.Label
-        GridLayout18                   matlab.ui.container.GridLayout
-        ShowsolutionsButtonGroup       matlab.ui.container.ButtonGroup
-        NoButton                       matlab.ui.control.RadioButton
-        YesButton                      matlab.ui.control.RadioButton
-        VariableOptionsButtonGroup     matlab.ui.container.ButtonGroup
-        xortButton                     matlab.ui.control.RadioButton
-        variousButton                  matlab.ui.control.RadioButton
-        ProblemTypesPanel              matlab.ui.container.Panel
-        GridLayout13                   matlab.ui.container.GridLayout
-        GridLayout14                   matlab.ui.container.GridLayout
-        FunctionTypesPanel             matlab.ui.container.Panel
-        TrigFunctions                  matlab.ui.control.CheckBox
-        ExpLnFunctions                 matlab.ui.control.CheckBox
-        PolynomialFunctions            matlab.ui.control.CheckBox
-        RandomizePanel                 matlab.ui.container.Panel
-        allTypesCheckBox               matlab.ui.control.CheckBox
-        IntegralsPanel                 matlab.ui.container.Panel
-        definiteIntCheckBox            matlab.ui.control.CheckBox
-        substitutionIntCheckBox        matlab.ui.control.CheckBox
-        simpleintegralCheckBox         matlab.ui.control.CheckBox
-        bypartsIntCheckBox             matlab.ui.control.CheckBox
-        allintegralsCheckBox           matlab.ui.control.CheckBox
-        DerivativesPanel               matlab.ui.container.Panel
-        powerrulelinearityDerCheckBox  matlab.ui.control.CheckBox
-        chainruleDerCheckBox           matlab.ui.control.CheckBox
-        simplederivativesCheckBox      matlab.ui.control.CheckBox
-        productruleDerCheckBox         matlab.ui.control.CheckBox
-        allderivativesCheckBox         matlab.ui.control.CheckBox
-        ProblemasdePrcticaTab          matlab.ui.container.Tab
-        GridLayout2                    matlab.ui.container.GridLayout
-        GridLayout3                    matlab.ui.container.GridLayout
-        GridLayout16                   matlab.ui.container.GridLayout
-        FeedbackStatement              matlab.ui.control.Label
-        GridLayout17                   matlab.ui.container.GridLayout
-        ProposedSoln                   matlab.ui.control.Label
-        ProposedSolnLabel              matlab.ui.control.Label
-        GridLayout15                   matlab.ui.container.GridLayout
-        GridLayout7                    matlab.ui.container.GridLayout
-        PreviewSolutionButton          matlab.ui.control.Button
-        SubmitSolutionButton           matlab.ui.control.Button
-        GridLayout6                    matlab.ui.container.GridLayout
-        SolPrompt                      matlab.ui.control.Label
-        SolutionEditField              matlab.ui.control.EditField
-        GridLayout5                    matlab.ui.container.GridLayout
-        Warning                        matlab.ui.control.Label
-        ProbStatement                  matlab.ui.control.Label
-        GridLayout4                    matlab.ui.container.GridLayout
-        GenerateProblemButton          matlab.ui.control.Button
-        AnalysisTab                    matlab.ui.container.Tab
-        GridLayout19                   matlab.ui.container.GridLayout
-        GridLayout20                   matlab.ui.container.GridLayout
-        GridLayout24                   matlab.ui.container.GridLayout
-        AnalysisFeedback               matlab.ui.control.Label
-        GridLayout23                   matlab.ui.container.GridLayout
-        ClearHistoryButton             matlab.ui.control.Button
-        UITable                        matlab.ui.control.Table
-        UIAxes                         matlab.ui.control.UIAxes
+        AplicacindeTarjetasdeClculoUIFigure  matlab.ui.Figure
+        GridLayout                      matlab.ui.container.GridLayout
+        TabGroup                        matlab.ui.container.TabGroup
+        ConfiguracinTab                 matlab.ui.container.Tab
+        GridLayout12                    matlab.ui.container.GridLayout
+        GridLayout22                    matlab.ui.container.GridLayout
+        SettingsMessage                 matlab.ui.control.Label
+        GridLayout18                    matlab.ui.container.GridLayout
+        OpcionesdeVariablesButtonGroup  matlab.ui.container.ButtonGroup
+        xortButton                      matlab.ui.control.RadioButton
+        VariosButton                    matlab.ui.control.RadioButton
+        ShowsolutionsButtonGroup        matlab.ui.container.ButtonGroup
+        NoButton                        matlab.ui.control.RadioButton
+        SButton                         matlab.ui.control.RadioButton
+        TiposdeProblemasPanel           matlab.ui.container.Panel
+        GridLayout13                    matlab.ui.container.GridLayout
+        GridLayout14                    matlab.ui.container.GridLayout
+        TiposdeFuncionesPanel           matlab.ui.container.Panel
+        TrigFunctions                   matlab.ui.control.CheckBox
+        ExpLnFunctions                  matlab.ui.control.CheckBox
+        PolynomialFunctions             matlab.ui.control.CheckBox
+        AleatorizarPanel                matlab.ui.container.Panel
+        allTypesCheckBox                matlab.ui.control.CheckBox
+        IntegralesPanel                 matlab.ui.container.Panel
+        definiteIntCheckBox             matlab.ui.control.CheckBox
+        substitutionIntCheckBox         matlab.ui.control.CheckBox
+        simpleintegralCheckBox          matlab.ui.control.CheckBox
+        bypartsIntCheckBox              matlab.ui.control.CheckBox
+        allintegralsCheckBox            matlab.ui.control.CheckBox
+        DerivadasPanel                  matlab.ui.container.Panel
+        powerrulelinearityDerCheckBox   matlab.ui.control.CheckBox
+        chainruleDerCheckBox            matlab.ui.control.CheckBox
+        simplederivativesCheckBox       matlab.ui.control.CheckBox
+        productruleDerCheckBox          matlab.ui.control.CheckBox
+        allderivativesCheckBox          matlab.ui.control.CheckBox
+        ProblemasdePrcticaTab           matlab.ui.container.Tab
+        GridLayout2                     matlab.ui.container.GridLayout
+        GridLayout3                     matlab.ui.container.GridLayout
+        GridLayout16                    matlab.ui.container.GridLayout
+        FeedbackStatement               matlab.ui.control.Label
+        GridLayout17                    matlab.ui.container.GridLayout
+        ProposedSoln                    matlab.ui.control.Label
+        ProposedSolnLabel               matlab.ui.control.Label
+        GridLayout15                    matlab.ui.container.GridLayout
+        GridLayout7                     matlab.ui.container.GridLayout
+        VistaPreviadelaSolucinButton    matlab.ui.control.Button
+        EnviarSolucinButton             matlab.ui.control.Button
+        GridLayout6                     matlab.ui.container.GridLayout
+        SolPrompt                       matlab.ui.control.Label
+        SolutionEditField               matlab.ui.control.EditField
+        GridLayout5                     matlab.ui.container.GridLayout
+        Warning                         matlab.ui.control.Label
+        ProbStatement                   matlab.ui.control.Label
+        GridLayout4                     matlab.ui.container.GridLayout
+        GenerarProblemaButton           matlab.ui.control.Button
+        AnlisisTab                      matlab.ui.container.Tab
+        GridLayout19                    matlab.ui.container.GridLayout
+        GridLayout20                    matlab.ui.container.GridLayout
+        GridLayout24                    matlab.ui.container.GridLayout
+        AnalysisFeedback                matlab.ui.control.Label
+        GridLayout23                    matlab.ui.container.GridLayout
+        BorarHistoriaButton             matlab.ui.control.Button
+        UITable                         matlab.ui.control.Table
+        UIAxes                          matlab.ui.control.UIAxes
     end
 
 
@@ -96,7 +96,6 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
         showSoln        % a boolean that tracks whether solutions should be shown
         newQuestionFlag % a boolean that tracks whether a new question is currently showing
         needNewQuesFlag % a boolean that tracks whether the current question is of an unselected probType
-        baseFontSize = 18;
     end
 
     methods (Access = private)
@@ -116,51 +115,53 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
         function genProb(app)
             % Clear the warning from the previous problem
             app.Warning.Text = " ";
+            app.Warning.FontColor = [0.85,0.33,0.10];
             if ~isempty(app.probOpts)
                 app.varChoice = app.varOpts(randi([1 length(app.varOpts)], 1));
                 app.probType = app.probOpts(randi([1 length(app.probOpts)],1));
                 genProbType(app)
                 if ~isempty(app.myFun)
-                myFuncStr = latex(app.myFun);
-                if contains(app.probType,"Der")
-                    formatSpec = "Calcula la derivada de $f(%s) = %s$ con respecto a %s.";
-                    str = compose(formatSpec,[app.varChoice myFuncStr app.varChoice]);
-                elseif contains(app.probType,"def")
-                    formatSpec = "Calcula la integral $\\displaystyle\\int_{%i}^{%i}%s\\,d%s$";
-                    str = compose(formatSpec,app.aTob(1),app.aTob(2),myFuncStr,app.varChoice);
-                else
-                    formatSpec = "Calcula la integral $\\displaystyle\\int %s\\,d%s$";
-                    str = compose(formatSpec,[myFuncStr app.varChoice]);
-                end
-                app.ProbStatement.Text = str;
-                % Print the appropriate solution prompt for the problem
-                % type and variable choice
-                if contains(app.probType,"Der")
-                    formatStr = "$\\frac{df}{d%s} = $";
-                    str = compose(formatStr,app.varChoice);
-                elseif contains(app.probType,"def")
-                    formatStr = "$\\displaystyle\\int_{%i}^{%i}f(%s)\\,d%s = $";
-                    str = compose(formatStr,app.aTob(1),app.aTob(2),app.varChoice,app.varChoice);
-                else
-                    formatStr = "$\\displaystyle\\int f(%s)\\,d%s = $";
-                    str = compose(formatStr,app.varChoice,app.varChoice);
-                end
-                app.SolPrompt.Text = str;
-                % Set remaining warning necessary for new problem
-                if contains(app.probType,"Int")
-                    app.Warning.Text = app.Warning.Text + " Si es necesario, usa +C. ";
-                end
-                if contains(app.probType,"def")
-                    app.Warning.Text = app.Warning.Text + " Si la integral diverge, usa Inf " + ...
-                        "para $\infty$ o -Inf para $-\infty$ o DNE para 'no existe'.";
-                end
+                    myFuncStr = latex(app.myFun);
+                    if contains(app.probType,"Der")
+                        formatSpec = "Calcula la derivada de $f(%s) = %s$ con respecto a %s.";
+                        str = compose(formatSpec,[app.varChoice myFuncStr app.varChoice]);
+                    elseif contains(app.probType,"def")
+                        formatSpec = "Calcula la integral $\\displaystyle\\int_{%i}^{%i}%s\\,d%s$";
+                        str = compose(formatSpec,app.aTob(1),app.aTob(2),myFuncStr,app.varChoice);
+                    else
+                        formatSpec = "Calcula la integral $\\displaystyle\\int %s\\,d%s$";
+                        str = compose(formatSpec,[myFuncStr app.varChoice]);
+                    end
+                    app.ProbStatement.Text = str;
+                    % Print the appropriate solution prompt for the problem
+                    % type and variable choice
+                    if contains(app.probType,"Der")
+                        formatStr = "$\\frac{df}{d%s} = $";
+                        str = compose(formatStr,app.varChoice);
+                    elseif contains(app.probType,"def")
+                        formatStr = "$\\displaystyle\\int_{%i}^{%i}f(%s)\\,d%s = $";
+                        str = compose(formatStr,app.aTob(1),app.aTob(2),app.varChoice,app.varChoice);
+                    else
+                        formatStr = "$\\displaystyle\\int f(%s)\\,d%s = $";
+                        str = compose(formatStr,app.varChoice,app.varChoice);
+                    end
+                    app.SolPrompt.Text = str;
+                    % Set remaining warning necessary for new problem
+                    if contains(app.probType,"Int")
+                        app.Warning.Text = app.Warning.Text + " Si es necesario, usa +C. ";
+                    end
+                    if contains(app.probType,"def")
+                        app.Warning.Text = app.Warning.Text + " Si la integral diverge, usa Inf " + ...
+                            "para $\infty$ o -Inf para $-\infty$ o DNE para 'no existe'.";
+                    end
                 end
             else
                 app.ProbStatement.Text = "Por favor, selecciona al menos un tipo de problema en la pestaña de Configuración " + ...
                     "y luego haz clic en 'Generar Problema'";
             end
-            if app.Warning.Text == " " 
+            if app.Warning.Text == " "
                 app.Warning.Text = "Si es necesario, las advertencias se mostrarán aquí.";
+                app.Warning.FontColor = [0 0 0];
             end
         end
 
@@ -198,15 +199,15 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
                         app.Warning.Text = "Puedes añadir tipos de funciones en la pestaña de Configuración.";
                         app.myFun = string.empty;
                     else
-                    syms f(x) g(x) x
-                    [f(x),val] = genFunDiff(app,[1 10],x,[11 14]);
-                    if val == 12
-                        g(x) = genFunDiff(app,[1 10],x,[8 11]);
-                        fun(x) = f(x)*g(x);
-                        app.myFun = fun(app.varChoice);
-                    else
-                        app.myFun = f(app.varChoice);
-                    end
+                        syms f(x) g(x) x
+                        [f(x),val] = genFunDiff(app,[1 10],x,[11 14]);
+                        if val == 12
+                            g(x) = genFunDiff(app,[1 10],x,[8 11]);
+                            fun(x) = f(x)*g(x);
+                            app.myFun = fun(app.varChoice);
+                        else
+                            app.myFun = f(app.varChoice);
+                        end
                     end
                 case "defInt"
                     a = randi([-3, 3], 1);
@@ -341,7 +342,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             app.generatedProbs = app.generatedProbs(idx,:);
             app.numCorrect = app.numCorrect(idx,:);
             app.numResub = app.numResub(idx,:);
-            if app.probType == opt 
+            if app.probType == opt
                 app.needNewQuesFlag = 1;
             else
                 app.needNewQuesFlag = 0;
@@ -349,8 +350,8 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
         end
 
         function isCorrect = checkSolution(app)
-            C = 1; %#ok<NASGU,NASGU> % Define local variables 
-            syms C 
+            C = 1; %#ok<NASGU,NASGU> % Define local variables
+            syms C
             % Determine the correct solution
             if contains(app.probType,"Der")
                 correctAnswer = diff(app.myFun,app.varChoice);
@@ -402,7 +403,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
                     isCorrect = 1;
                 else
                     app.FeedbackStatement.Text = app.FeedbackStatement.Text + " Debes verificar tus signos " + ...
-                    "y tus límites. ¿Dónde está la discontinuidad? ";
+                        "y tus límites. ¿Dónde está la discontinuidad? ";
                     isCorrect = 0;
                 end
             elseif contains(app.probType,"def") && has(app.myAnswer,C)
@@ -417,7 +418,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
                 app.FeedbackStatement.Text = "Esta respuesta está faltando +C. ";
                 isCorrect = 0;
             elseif contains(app.probType,"Int") && ~contains(app.probType,"def") ...
-                && isAlways(diff(correctAnswer,app.varChoice) == diff(app.myAnswer,app.varChoice),"Unknown","false")
+                    && isAlways(diff(correctAnswer,app.varChoice) == diff(app.myAnswer,app.varChoice))
                 app.FeedbackStatement.Text = "Esta solución es correcta. Otra forma equivalente es: " + ...
                     "$\displaystyle " + latex(correctAnswer - C) + " + C$";
                 isCorrect = 1;
@@ -458,16 +459,16 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
         function createAnalysisFeedbackText(app)
             if app.showSoln == 1
                 numSkipped = app.generatedProbs-(app.numCorrect+app.errorCount);
-%                pctTypeWrong = (app.errorCount+numSkipped)./(app.generatedProbs)*100;
+                %                pctTypeWrong = (app.errorCount+numSkipped)./(app.generatedProbs)*100;
                 overallRight = sum(app.numCorrect)/sum(app.generatedProbs)*100;
             else
                 numSkipped = (app.generatedProbs + app.numResub) - (app.numCorrect + app.errorCount);
-%                pctTypeWrong = (app.errorCount+numSkipped)./(app.generatedProbs+app.numResub)*100;
+                %                pctTypeWrong = (app.errorCount+numSkipped)./(app.generatedProbs+app.numResub)*100;
                 overallRight = sum(app.numCorrect)/(sum(app.generatedProbs)+sum(app.numResub))*100;
             end
             subPctWrong = app.errorCount./(app.numCorrect+app.errorCount)*100;
             overallNumSkipped = sum(numSkipped);
-%            pctTypeWrong(app.generatedProbs == 0) = 0;
+            %            pctTypeWrong(app.generatedProbs == 0) = 0;
 
             % Check if the user has completed any problems at all
             if sum(app.generatedProbs) == 0
@@ -492,13 +493,13 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
                 for k = 1:length(app.probOpts)
                     longName = app.fullNames(2,find(app.fullNames(1,:) == app.probOpts(k)));
                     if app.generatedProbs(k) == 0
-                        str = str + compose("%s: No se han generado problemas de este tipo aún. ",longName); 
+                        str = str + compose("%s: No se han generado problemas de este tipo aún. ",longName);
                     else
                         str = str + compose("%s: %i solución(es) enviada(s) de las cuales %.1f\\%% fueron incorrectas. ", ...
                             longName,app.errorCount(k)+app.numCorrect(k),subPctWrong(k));
                     end
                     % If problems of this type have been resubmitted, give
-                    % additional feedback on how frequently 
+                    % additional feedback on how frequently
                     if app.numResub(k) == 1
                         str = str + "Hubo una reenvío. ";
                     elseif app.numResub(k) > 1
@@ -507,9 +508,9 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
                     % Si se han omitido problemas de este tipo, dar
                     % retroalimentación adicional sobre la frecuencia
                     if numSkipped(k) == 1
-                        str = str + "Se omitió un problema. ";
+                        str = str + newline + "Se omitió un problema. ";
                     elseif numSkipped(k) > 1
-                        str = str + compose("Se omitieron %i problemas. ",numSkipped(k));
+                        str = str + newline + compose("Se omitieron %i problemas. ",numSkipped(k));
                     end
                     % If there have been more than 5 problems of this type,
                     % give additional feedback on latest rate of success
@@ -531,7 +532,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
                 app.numCorrect(idx) = app.numCorrect(idx) + isCorrect;
             else
                 app.FeedbackStatement.Text = convertCharsToStrings(app.FeedbackStatement.Text) + newline ...
-                + "Esta entrega no se registra para análisis.";
+                    + "Esta entrega no se registra para análisis.";
             end
         end
 
@@ -540,7 +541,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             syms C x y z w r t %#ok<NASGU>
             app.ProposedSolnLabel.Text = "Mi solución es " + app.SolPrompt.Text;
             try
-                if contains(app.SolutionEditField.Value,'DNE') 
+                if contains(app.SolutionEditField.Value,'DNE')
                     myAnswerStr = "NaN";
                 elseif contains(app.SolutionEditField.Value,'int') || contains(app.SolutionEditField.Value,'diff')
                     ME = MException('InputField:invalidArgument','No puedes usar comandos de integración o diferenciación de MATLAB.');
@@ -665,7 +666,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             app.funcOpts = [1 1 1]; % Poly, ExpLn, Trig allowed
             app.simplederivativesCheckBox.Value = 1;
             app.TabGroup.SelectedTab = app.ConfiguracinTab;
-            app.SettingsMessage.Text = "Por favor, selecciona los tipos de problemas deseados, variables y modo de visualización de la solución y luego haz clic en " + ...
+            app.SettingsMessage.Text = "Por favor, selecciona los tipos de problemas deseados, variables y modo de visualización de la solución" + newline + "y luego haz clic en " + ...
                 "'Problemas de Práctica'.";
             app.ProbStatement.Text = "Haz clic en el botón 'Generar Problema' para crear un nuevo problema.";
             app.SolutionEditField.Value = "Escribe tu solución aquí como código MATLAB.";
@@ -690,12 +691,12 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
                 "pestaña 'Análisis' para ver cómo te va en cada tipo de problema.";
             app.prevFuncType = 0;
             % Set Font Size
-            app.ProbStatement.FontSize = app.baseFontSize;
-            app.SolutionEditField.FontSize = app.baseFontSize;
+            app.ProbStatement.FontSize = 14;
+            app.SolutionEditField.FontSize = 14;
         end
 
-        % Button pushed function: GenerateProblemButton
-        function GenerateProblemButtonPushed(app, event)
+        % Button pushed function: GenerarProblemaButton
+        function GenerarProblemaButtonPushed(app, event)
             genProb(app)
             idx = find(app.probOpts == app.probType);
             app.generatedProbs(idx) = app.generatedProbs(idx)+1;
@@ -843,18 +844,18 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
 
         end
 
-        % Selection changed function: VariableOptionsButtonGroup
+        % Selection changed function: OpcionesdeVariablesButtonGroup
         function setVarOpts(app, event)
-            selectedButton = app.VariableOptionsButtonGroup.SelectedObject;
-            if selectedButton == app.variousButton
+            selectedButton = app.OpcionesdeVariablesButtonGroup.SelectedObject;
+            if selectedButton == app.VariosButton
                 app.varOpts = ["x" "y" "z" "t" "r" "w"];
             else
                 app.varOpts = ["x" "t"];
             end
         end
 
-        % Button pushed function: SubmitSolutionButton
-        function SubmitSolutionButtonPushed(app, event)
+        % Button pushed function: EnviarSolucinButton
+        function EnviarSolucinButtonPushed(app, event)
             if app.newQuestionFlag == -1
                 app.ProposedSoln.Text = "Debes generar un problema antes de poder " + ...
                     "resolverlo.";
@@ -896,14 +897,14 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
         function practiceMoreProblems(app, event)
             app.TabGroup.SelectedTab = app.ProblemasdePrcticaTab;
             if app.needNewQuesFlag == 1 && app.newQuestionFlag ~= -1
-                GenerateProblemButtonPushed(app,[])
+                GenerarProblemaButtonPushed(app,[])
             end
         end
 
-        % Button down function: AnalysisTab
+        % Button down function: AnlisisTab
         function AnalyzeResultsButtonPushed(app, event)
             % Show components for analysis
-            app.TabGroup.SelectedTab = app.AnalysisTab;
+            app.TabGroup.SelectedTab = app.AnlisisTab;
             % Set up plot
             app.UIAxes.XLabel.String = "Tipo de Problema";
             app.UIAxes.Title.String = "Tasas de Éxito por Tipo de Problema";
@@ -946,17 +947,17 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             createAnalysisFeedbackText(app)
         end
 
-        % Button pushed function: PreviewSolutionButton
-        function PreviewSolutionButtonPushed(app, event)
+        % Button pushed function: VistaPreviadelaSolucinButton
+        function VistaPreviadelaSolucinButtonPushed(app, event)
             if app.newQuestionFlag == -1
-                   app.ProposedSoln.Text = "Debes generar un problema antes de poder resolverlo.";
+                app.ProposedSoln.Text = "Debes generar un problema antes de poder resolverlo.";
             else
                 previewSolution(app);
             end
         end
 
-        % Button pushed function: ClearHistoryButton
-        function ClearHistoryButtonPushed(app, event)
+        % Button pushed function: BorarHistoriaButton
+        function BorarHistoriaButtonPushed(app, event)
             app.errorCount = zeros(size(app.errorCount));
             app.lastFive = zeros(size(app.lastFive));
             app.solnChkAttempts = zeros(size(app.solnChkAttempts));
@@ -979,7 +980,6 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
                 app.PolynomialFunctions.Value = true;
                 app.funcOpts = [1 0 0];
             end
-            
         end
     end
 
@@ -989,15 +989,16 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
         % Create UIFigure and components
         function createComponents(app)
 
-            % Create CalculusFlashcardsAppUIFigure and hide until all components are created
-            app.CalculusFlashcardsAppUIFigure = uifigure('Visible', 'off');
-            app.CalculusFlashcardsAppUIFigure.Position = [100 100 818 600];
-            app.CalculusFlashcardsAppUIFigure.Name = 'Aplicación de Tarjetas de Cálculo';
+            % Create AplicacindeTarjetasdeClculoUIFigure and hide until all components are created
+            app.AplicacindeTarjetasdeClculoUIFigure = uifigure('Visible', 'off');
+            app.AplicacindeTarjetasdeClculoUIFigure.Position = [100 100 805 704];
+            app.AplicacindeTarjetasdeClculoUIFigure.Name = 'Aplicación de Tarjetas de Cálculo';
 
             % Create GridLayout
-            app.GridLayout = uigridlayout(app.CalculusFlashcardsAppUIFigure);
+            app.GridLayout = uigridlayout(app.AplicacindeTarjetasdeClculoUIFigure);
             app.GridLayout.ColumnWidth = {'1x'};
             app.GridLayout.RowHeight = {'1x'};
+            app.GridLayout.BackgroundColor = [0 0.4471 0.7412];
 
             % Create TabGroup
             app.TabGroup = uitabgroup(app.GridLayout);
@@ -1013,103 +1014,96 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             app.GridLayout12.ColumnWidth = {'1x'};
             app.GridLayout12.RowHeight = {'1x', '1x', '4x'};
 
-            % Create ProblemTypesPanel
-            app.ProblemTypesPanel = uipanel(app.GridLayout12);
-            app.ProblemTypesPanel.TitlePosition = 'centertop';
-            app.ProblemTypesPanel.Title = 'Tipos de Problemas';
-            app.ProblemTypesPanel.Layout.Row = 3;
-            app.ProblemTypesPanel.Layout.Column = 1;
-            app.ProblemTypesPanel.FontWeight = 'bold';
-            app.ProblemTypesPanel.FontSize = app.baseFontSize+2;
+            % Create TiposdeProblemasPanel
+            app.TiposdeProblemasPanel = uipanel(app.GridLayout12);
+            app.TiposdeProblemasPanel.TitlePosition = 'centertop';
+            app.TiposdeProblemasPanel.Title = 'Tipos de Problemas';
+            app.TiposdeProblemasPanel.BackgroundColor = [0 0.4471 0.7412];
+            app.TiposdeProblemasPanel.Layout.Row = 3;
+            app.TiposdeProblemasPanel.Layout.Column = 1;
+            app.TiposdeProblemasPanel.FontWeight = 'bold';
+            app.TiposdeProblemasPanel.FontSize = 18;
 
             % Create GridLayout13
-            app.GridLayout13 = uigridlayout(app.ProblemTypesPanel);
+            app.GridLayout13 = uigridlayout(app.TiposdeProblemasPanel);
             app.GridLayout13.ColumnWidth = {'1x', '1x', '1x'};
             app.GridLayout13.RowHeight = {'1x'};
 
-            % Create DerivativesPanel
-            app.DerivativesPanel = uipanel(app.GridLayout13);
-            app.DerivativesPanel.TitlePosition = 'centertop';
-            app.DerivativesPanel.Title = 'Derivadas';
-            app.DerivativesPanel.Layout.Row = 1;
-            app.DerivativesPanel.Layout.Column = 1;
-            app.DerivativesPanel.FontWeight = 'bold';
-            app.DerivativesPanel.FontSize = app.baseFontSize;
+            % Create DerivadasPanel
+            app.DerivadasPanel = uipanel(app.GridLayout13);
+            app.DerivadasPanel.TitlePosition = 'centertop';
+            app.DerivadasPanel.Title = 'Derivadas';
+            app.DerivadasPanel.Layout.Row = 1;
+            app.DerivadasPanel.Layout.Column = 1;
 
             % Create allderivativesCheckBox
-            app.allderivativesCheckBox = uicheckbox(app.DerivativesPanel);
+            app.allderivativesCheckBox = uicheckbox(app.DerivadasPanel);
             app.allderivativesCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
-           %app.allderivativesCheckBox.WordWrap = "on";
             app.allderivativesCheckBox.Text = 'Todas las derivadas';
-            app.allderivativesCheckBox.Position = [55 224 150 30];
+            app.allderivativesCheckBox.Position = [55 286 128 22];
 
             % Create productruleDerCheckBox
-            app.productruleDerCheckBox = uicheckbox(app.DerivativesPanel);
+            app.productruleDerCheckBox = uicheckbox(app.DerivadasPanel);
             app.productruleDerCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.productruleDerCheckBox.Text = 'Regla del Producto';
-            app.productruleDerCheckBox.Position = [55 7 150 30];
+            app.productruleDerCheckBox.Position = [55 69 124 22];
 
             % Create simplederivativesCheckBox
-            app.simplederivativesCheckBox = uicheckbox(app.DerivativesPanel);
+            app.simplederivativesCheckBox = uicheckbox(app.DerivadasPanel);
             app.simplederivativesCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.simplederivativesCheckBox.Text = 'Derivadas de Funciones';
-            app.simplederivativesCheckBox.Position = [55 148 150 30];
+            app.simplederivativesCheckBox.Position = [55 210 151 22];
 
             % Create chainruleDerCheckBox
-            app.chainruleDerCheckBox = uicheckbox(app.DerivativesPanel);
+            app.chainruleDerCheckBox = uicheckbox(app.DerivadasPanel);
             app.chainruleDerCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.chainruleDerCheckBox.Text = 'Regla de la Cadena';
-            app.chainruleDerCheckBox.Position = [55 54 150 30];
+            app.chainruleDerCheckBox.Position = [55 116 128 22];
 
             % Create powerrulelinearityDerCheckBox
-            app.powerrulelinearityDerCheckBox = uicheckbox(app.DerivativesPanel);
+            app.powerrulelinearityDerCheckBox = uicheckbox(app.DerivadasPanel);
             app.powerrulelinearityDerCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.powerrulelinearityDerCheckBox.Text = 'Reglas de Potencia y Linealidad';
             app.powerrulelinearityDerCheckBox.WordWrap = 'on';
-            app.powerrulelinearityDerCheckBox.Position = [55 101 165 30];
+            app.powerrulelinearityDerCheckBox.Position = [55 155 165 30];
 
-            % Create IntegralsPanel
-            app.IntegralsPanel = uipanel(app.GridLayout13);
-            app.IntegralsPanel.TitlePosition = 'centertop';
-            app.IntegralsPanel.Title = 'Integrales';
-            app.IntegralsPanel.Layout.Row = 1;
-            app.IntegralsPanel.Layout.Column = 3;
-            app.IntegralsPanel.FontWeight = 'bold';
-            app.IntegralsPanel.FontSize = app.baseFontSize;
+            % Create IntegralesPanel
+            app.IntegralesPanel = uipanel(app.GridLayout13);
+            app.IntegralesPanel.TitlePosition = 'centertop';
+            app.IntegralesPanel.Title = 'Integrales';
+            app.IntegralesPanel.Layout.Row = 1;
+            app.IntegralesPanel.Layout.Column = 3;
 
             % Create allintegralsCheckBox
-            app.allintegralsCheckBox = uicheckbox(app.IntegralsPanel);
+            app.allintegralsCheckBox = uicheckbox(app.IntegralesPanel);
             app.allintegralsCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.allintegralsCheckBox.Text = 'Todas las integrales';
-            app.allintegralsCheckBox.WordWrap = "on";
-            app.allintegralsCheckBox.Position = [57 224 157 30];
+            app.allintegralsCheckBox.Position = [57 286 128 22];
 
             % Create bypartsIntCheckBox
-            app.bypartsIntCheckBox = uicheckbox(app.IntegralsPanel);
+            app.bypartsIntCheckBox = uicheckbox(app.IntegralesPanel);
             app.bypartsIntCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.bypartsIntCheckBox.Text = 'Integración por Partes';
-            app.bypartsIntCheckBox.WordWrap = "on";
-            app.bypartsIntCheckBox.Position = [54 7 156 30];
+            app.bypartsIntCheckBox.Position = [54 69 140 22];
 
             % Create simpleintegralCheckBox
-            app.simpleintegralCheckBox = uicheckbox(app.IntegralsPanel);
+            app.simpleintegralCheckBox = uicheckbox(app.IntegralesPanel);
             app.simpleintegralCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.simpleintegralCheckBox.Text = 'Integrales de Funciones';
-            app.simpleintegralCheckBox.WordWrap = "on";
-            app.simpleintegralCheckBox.Position = [54 148 157 30];
+            app.simpleintegralCheckBox.Position = [54 210 150 22];
 
             % Create substitutionIntCheckBox
-            app.substitutionIntCheckBox = uicheckbox(app.IntegralsPanel);
+            app.substitutionIntCheckBox = uicheckbox(app.IntegralesPanel);
             app.substitutionIntCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.substitutionIntCheckBox.Text = 'Sustitución';
-            app.substitutionIntCheckBox.Position = [54 54 85 30];
+            app.substitutionIntCheckBox.Position = [54 116 81 22];
 
             % Create definiteIntCheckBox
-            app.definiteIntCheckBox = uicheckbox(app.IntegralsPanel);
+            app.definiteIntCheckBox = uicheckbox(app.IntegralesPanel);
             app.definiteIntCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
             app.definiteIntCheckBox.Text = 'Integrales Definidas';
             app.definiteIntCheckBox.WordWrap = 'on';
-            app.definiteIntCheckBox.Position = [54 101 165 30];
+            app.definiteIntCheckBox.Position = [54 163 165 22];
 
             % Create GridLayout14
             app.GridLayout14 = uigridlayout(app.GridLayout13);
@@ -1118,76 +1112,50 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             app.GridLayout14.Layout.Row = 1;
             app.GridLayout14.Layout.Column = 2;
 
-            % Create RandomizePanel
-            app.RandomizePanel = uipanel(app.GridLayout14);
-            app.RandomizePanel.TitlePosition = 'centertop';
-            app.RandomizePanel.Title = 'Aleatorizar';
-            app.RandomizePanel.Layout.Row = 1;
-            app.RandomizePanel.Layout.Column = 1;
-            app.RandomizePanel.FontWeight = 'bold';
-            app.RandomizePanel.FontSize = app.baseFontSize;
+            % Create AleatorizarPanel
+            app.AleatorizarPanel = uipanel(app.GridLayout14);
+            app.AleatorizarPanel.TitlePosition = 'centertop';
+            app.AleatorizarPanel.Title = 'Aleatorizar';
+            app.AleatorizarPanel.Layout.Row = 1;
+            app.AleatorizarPanel.Layout.Column = 1;
 
             % Create allTypesCheckBox
-            app.allTypesCheckBox = uicheckbox(app.RandomizePanel);
+            app.allTypesCheckBox = uicheckbox(app.AleatorizarPanel);
             app.allTypesCheckBox.ValueChangedFcn = createCallbackFcn(app, @setTypeOptions, true);
-            app.allTypesCheckBox.Text = 'Todas las derivadas e integrales';
-            app.allTypesCheckBox.WordWrap = "on";
-            app.allTypesCheckBox.Position = [28 23 168 30];
+            app.allTypesCheckBox.Text = {'Todas las derivadas '; 'e integrales'};
+            app.allTypesCheckBox.Position = [28 26 181 40];
 
-            % Create FunctionTypesPanel
-            app.FunctionTypesPanel = uipanel(app.GridLayout14);
-            app.FunctionTypesPanel.TitlePosition = 'centertop';
-            app.FunctionTypesPanel.Title = 'Tipos de Funciones';
-            app.FunctionTypesPanel.Layout.Row = [2 3];
-            app.FunctionTypesPanel.Layout.Column = 1;
-            app.FunctionTypesPanel.FontWeight = 'bold';
-            app.FunctionTypesPanel.FontSize = app.baseFontSize;
+            % Create TiposdeFuncionesPanel
+            app.TiposdeFuncionesPanel = uipanel(app.GridLayout14);
+            app.TiposdeFuncionesPanel.TitlePosition = 'centertop';
+            app.TiposdeFuncionesPanel.Title = 'Tipos de Funciones';
+            app.TiposdeFuncionesPanel.Layout.Row = [2 3];
+            app.TiposdeFuncionesPanel.Layout.Column = 1;
 
             % Create PolynomialFunctions
-            app.PolynomialFunctions = uicheckbox(app.FunctionTypesPanel);
+            app.PolynomialFunctions = uicheckbox(app.TiposdeFuncionesPanel);
             app.PolynomialFunctions.ValueChangedFcn = createCallbackFcn(app, @FunctionsValueChanged, true);
             app.PolynomialFunctions.Text = 'Polinomios';
-            app.PolynomialFunctions.Position = [28 119 87 22];
+            app.PolynomialFunctions.Position = [34 147 81 22];
 
             % Create ExpLnFunctions
-            app.ExpLnFunctions = uicheckbox(app.FunctionTypesPanel);
+            app.ExpLnFunctions = uicheckbox(app.TiposdeFuncionesPanel);
             app.ExpLnFunctions.ValueChangedFcn = createCallbackFcn(app, @FunctionsValueChanged, true);
             app.ExpLnFunctions.Text = 'Exponenciales y logaritmos';
-            app.ExpLnFunctions.Position = [28 76 173 22];
+            app.ExpLnFunctions.Position = [34 104 168 22];
 
             % Create TrigFunctions
-            app.TrigFunctions = uicheckbox(app.FunctionTypesPanel);
+            app.TrigFunctions = uicheckbox(app.TiposdeFuncionesPanel);
             app.TrigFunctions.ValueChangedFcn = createCallbackFcn(app, @FunctionsValueChanged, true);
             app.TrigFunctions.Text = 'Funciones trigonométricas';
-            app.TrigFunctions.WordWrap = "on";
-            app.TrigFunctions.Position = [28 32 156 30];
+            app.TrigFunctions.Position = [34 60 163 22];
 
             % Create GridLayout18
             app.GridLayout18 = uigridlayout(app.GridLayout12);
             app.GridLayout18.RowHeight = {'1x'};
             app.GridLayout18.Layout.Row = 1;
             app.GridLayout18.Layout.Column = 1;
-
-            % Create VariableOptionsButtonGroup
-            app.VariableOptionsButtonGroup = uibuttongroup(app.GridLayout18);
-            app.VariableOptionsButtonGroup.SelectionChangedFcn = createCallbackFcn(app, @setVarOpts, true);
-            app.VariableOptionsButtonGroup.TitlePosition = 'centertop';
-            app.VariableOptionsButtonGroup.Title = 'Opciones de Variables';
-            app.VariableOptionsButtonGroup.Layout.Row = 1;
-            app.VariableOptionsButtonGroup.Layout.Column = 1;
-            app.VariableOptionsButtonGroup.FontWeight = 'bold';
-            app.VariableOptionsButtonGroup.FontSize = app.baseFontSize;
-
-            % Create variousButton
-            app.variousButton = uiradiobutton(app.VariableOptionsButtonGroup);
-            app.variousButton.Text = 'varios';
-            app.variousButton.Position = [76 12 61 22];
-            app.variousButton.Value = true;
-
-            % Create xortButton
-            app.xortButton = uiradiobutton(app.VariableOptionsButtonGroup);
-            app.xortButton.Text = 'x o t';
-            app.xortButton.Position = [239 12 65 22];
+            app.GridLayout18.BackgroundColor = [0 0.4471 0.7412];
 
             % Create ShowsolutionsButtonGroup
             app.ShowsolutionsButtonGroup = uibuttongroup(app.GridLayout18);
@@ -1197,18 +1165,40 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             app.ShowsolutionsButtonGroup.Layout.Row = 1;
             app.ShowsolutionsButtonGroup.Layout.Column = 2;
             app.ShowsolutionsButtonGroup.FontWeight = 'bold';
-            app.ShowsolutionsButtonGroup.FontSize = app.baseFontSize;
+            app.ShowsolutionsButtonGroup.FontSize = 16;
 
-            % Create YesButton
-            app.YesButton = uiradiobutton(app.ShowsolutionsButtonGroup);
-            app.YesButton.Text = 'Sí';
-            app.YesButton.Position = [97 12 58 22];
-            app.YesButton.Value = true;
+            % Create SButton
+            app.SButton = uiradiobutton(app.ShowsolutionsButtonGroup);
+            app.SButton.Text = 'Sí';
+            app.SButton.Position = [92 18 58 22];
+            app.SButton.Value = true;
 
             % Create NoButton
             app.NoButton = uiradiobutton(app.ShowsolutionsButtonGroup);
             app.NoButton.Text = 'No';
-            app.NoButton.Position = [225 12 65 22];
+            app.NoButton.Position = [231 18 65 22];
+
+            % Create OpcionesdeVariablesButtonGroup
+            app.OpcionesdeVariablesButtonGroup = uibuttongroup(app.GridLayout18);
+            app.OpcionesdeVariablesButtonGroup.SelectionChangedFcn = createCallbackFcn(app, @setVarOpts, true);
+            app.OpcionesdeVariablesButtonGroup.TitlePosition = 'centertop';
+            app.OpcionesdeVariablesButtonGroup.Title = 'Opciones de Variables';
+            app.OpcionesdeVariablesButtonGroup.Layout.Row = 1;
+            app.OpcionesdeVariablesButtonGroup.Layout.Column = 1;
+            app.OpcionesdeVariablesButtonGroup.FontWeight = 'bold';
+            app.OpcionesdeVariablesButtonGroup.FontSize = 16;
+
+            % Create VariosButton
+            app.VariosButton = uiradiobutton(app.OpcionesdeVariablesButtonGroup);
+            app.VariosButton.Text = 'Varios';
+            app.VariosButton.Position = [92 18 55 22];
+            app.VariosButton.Value = true;
+
+            % Create xortButton
+            app.xortButton = uiradiobutton(app.OpcionesdeVariablesButtonGroup);
+            app.xortButton.Text = 'Solo $x$ or $t$';
+            app.xortButton.Interpreter = 'latex';
+            app.xortButton.Position = [214 18 83 22];
 
             % Create GridLayout22
             app.GridLayout22 = uigridlayout(app.GridLayout12);
@@ -1219,10 +1209,10 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
 
             % Create SettingsMessage
             app.SettingsMessage = uilabel(app.GridLayout22);
-            app.SettingsMessage.WordWrap = "on";
             app.SettingsMessage.HorizontalAlignment = 'center';
             app.SettingsMessage.Layout.Row = 1;
             app.SettingsMessage.Layout.Column = 1;
+            app.SettingsMessage.Text = 'Label3';
 
             % Create ProblemasdePrcticaTab
             app.ProblemasdePrcticaTab = uitab(app.TabGroup);
@@ -1233,6 +1223,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             app.GridLayout2 = uigridlayout(app.ProblemasdePrcticaTab);
             app.GridLayout2.ColumnWidth = {'1x'};
             app.GridLayout2.RowHeight = {'1x'};
+            app.GridLayout2.BackgroundColor = [0 0.4471 0.7412];
 
             % Create GridLayout3
             app.GridLayout3 = uigridlayout(app.GridLayout2);
@@ -1240,6 +1231,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             app.GridLayout3.RowHeight = {'2x', '1x', '3x'};
             app.GridLayout3.Layout.Row = 1;
             app.GridLayout3.Layout.Column = 1;
+            app.GridLayout3.BackgroundColor = [0 0.4471 0.7412];
 
             % Create GridLayout4
             app.GridLayout4 = uigridlayout(app.GridLayout3);
@@ -1247,14 +1239,15 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             app.GridLayout4.RowHeight = {'0.2x', '2x', '2x'};
             app.GridLayout4.Layout.Row = 1;
             app.GridLayout4.Layout.Column = 1;
+            app.GridLayout4.BackgroundColor = [0 0.4471 0.7412];
 
-            % Create GenerateProblemButton
-            app.GenerateProblemButton = uibutton(app.GridLayout4, 'push');
-            app.GenerateProblemButton.ButtonPushedFcn = createCallbackFcn(app, @GenerateProblemButtonPushed, true);
-            app.GenerateProblemButton.WordWrap = 'on';
-            app.GenerateProblemButton.Layout.Row = 2;
-            app.GenerateProblemButton.Layout.Column = 1;
-            app.GenerateProblemButton.Text = 'Generar Problema';
+            % Create GenerarProblemaButton
+            app.GenerarProblemaButton = uibutton(app.GridLayout4, 'push');
+            app.GenerarProblemaButton.ButtonPushedFcn = createCallbackFcn(app, @GenerarProblemaButtonPushed, true);
+            app.GenerarProblemaButton.WordWrap = 'on';
+            app.GenerarProblemaButton.Layout.Row = 2;
+            app.GenerarProblemaButton.Layout.Column = 1;
+            app.GenerarProblemaButton.Text = 'Generar Problema';
 
             % Create GridLayout5
             app.GridLayout5 = uigridlayout(app.GridLayout3);
@@ -1274,7 +1267,6 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             % Create Warning
             app.Warning = uilabel(app.GridLayout5);
             app.Warning.HorizontalAlignment = 'center';
-            app.Warning.WordWrap = 'on';
             app.Warning.Layout.Row = 2;
             app.Warning.Layout.Column = 1;
             app.Warning.Interpreter = 'latex';
@@ -1303,25 +1295,26 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             % Create GridLayout7
             app.GridLayout7 = uigridlayout(app.GridLayout3);
             app.GridLayout7.ColumnWidth = {'1x'};
-            app.GridLayout7.RowHeight = {'0.1x', '1.1x', '1x', '1x', '1x'};
+            app.GridLayout7.RowHeight = {'0.1x', '1x', '1.1x', '1x', '1x'};
             app.GridLayout7.Layout.Row = 3;
             app.GridLayout7.Layout.Column = 1;
+            app.GridLayout7.BackgroundColor = [0 0.4471 0.7412];
 
-            % Create SubmitSolutionButton
-            app.SubmitSolutionButton = uibutton(app.GridLayout7, 'push');
-            app.SubmitSolutionButton.ButtonPushedFcn = createCallbackFcn(app, @SubmitSolutionButtonPushed, true);
-            app.SubmitSolutionButton.WordWrap = 'on';
-            app.SubmitSolutionButton.Layout.Row = 4;
-            app.SubmitSolutionButton.Layout.Column = 1;
-            app.SubmitSolutionButton.Text = 'Enviar Solución';
+            % Create EnviarSolucinButton
+            app.EnviarSolucinButton = uibutton(app.GridLayout7, 'push');
+            app.EnviarSolucinButton.ButtonPushedFcn = createCallbackFcn(app, @EnviarSolucinButtonPushed, true);
+            app.EnviarSolucinButton.WordWrap = 'on';
+            app.EnviarSolucinButton.Layout.Row = 4;
+            app.EnviarSolucinButton.Layout.Column = 1;
+            app.EnviarSolucinButton.Text = 'Enviar Solución';
 
-            % Create PreviewSolutionButton
-            app.PreviewSolutionButton = uibutton(app.GridLayout7, 'push');
-            app.PreviewSolutionButton.ButtonPushedFcn = createCallbackFcn(app, @PreviewSolutionButtonPushed, true);
-            app.PreviewSolutionButton.WordWrap = 'on';
-            app.PreviewSolutionButton.Layout.Row = 2;
-            app.PreviewSolutionButton.Layout.Column = 1;
-            app.PreviewSolutionButton.Text = 'Vista Previa de la Solución';
+            % Create VistaPreviadelaSolucinButton
+            app.VistaPreviadelaSolucinButton = uibutton(app.GridLayout7, 'push');
+            app.VistaPreviadelaSolucinButton.ButtonPushedFcn = createCallbackFcn(app, @VistaPreviadelaSolucinButtonPushed, true);
+            app.VistaPreviadelaSolucinButton.WordWrap = 'on';
+            app.VistaPreviadelaSolucinButton.Layout.Row = 2;
+            app.VistaPreviadelaSolucinButton.Layout.Column = 1;
+            app.VistaPreviadelaSolucinButton.Text = 'Vista Previa de la Solución';
 
             % Create GridLayout15
             app.GridLayout15 = uigridlayout(app.GridLayout3);
@@ -1329,6 +1322,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             app.GridLayout15.RowHeight = {'1x', '9x', '1x'};
             app.GridLayout15.Layout.Row = 2;
             app.GridLayout15.Layout.Column = 1;
+            app.GridLayout15.BackgroundColor = [0 0.4471 0.7412];
 
             % Create GridLayout16
             app.GridLayout16 = uigridlayout(app.GridLayout3);
@@ -1350,31 +1344,29 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             app.ProposedSolnLabel.Layout.Row = 1;
             app.ProposedSolnLabel.Layout.Column = 1;
             app.ProposedSolnLabel.Interpreter = 'latex';
-            app.ProposedSolnLabel.Text = 'Etiqueta de Solución Propuesta';
+            app.ProposedSolnLabel.Text = {'Etiqueta de Solución'; 'Propuesta'};
 
             % Create ProposedSoln
             app.ProposedSoln = uilabel(app.GridLayout17);
-            app.ProposedSoln.WordWrap = 'on';
             app.ProposedSoln.Layout.Row = 1;
             app.ProposedSoln.Layout.Column = 2;
             app.ProposedSoln.Interpreter = 'latex';
-            app.ProposedSoln.Text = 'Solución Propuesta';
+            app.ProposedSoln.Text = {'Solución'; 'Propuesta'};
 
             % Create FeedbackStatement
             app.FeedbackStatement = uilabel(app.GridLayout16);
-            app.FeedbackStatement.WordWrap = 'on';
             app.FeedbackStatement.Layout.Row = 2;
             app.FeedbackStatement.Layout.Column = 1;
             app.FeedbackStatement.Interpreter = 'latex';
             app.FeedbackStatement.Text = 'Declaración de Retroalimentación';
 
-            % Create AnalysisTab
-            app.AnalysisTab = uitab(app.TabGroup);
-            app.AnalysisTab.Title = 'Análisis';
-            app.AnalysisTab.ButtonDownFcn = createCallbackFcn(app, @AnalyzeResultsButtonPushed, true);
+            % Create AnlisisTab
+            app.AnlisisTab = uitab(app.TabGroup);
+            app.AnlisisTab.Title = 'Análisis';
+            app.AnlisisTab.ButtonDownFcn = createCallbackFcn(app, @AnalyzeResultsButtonPushed, true);
 
             % Create GridLayout19
-            app.GridLayout19 = uigridlayout(app.AnalysisTab);
+            app.GridLayout19 = uigridlayout(app.AnlisisTab);
             app.GridLayout19.ColumnWidth = {'1x'};
             app.GridLayout19.RowHeight = {161, '1.5x', '1x'};
 
@@ -1400,6 +1392,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             app.GridLayout20.RowHeight = {'1x'};
             app.GridLayout20.Layout.Row = 2;
             app.GridLayout20.Layout.Column = 1;
+            app.GridLayout20.BackgroundColor = [0 0.4471 0.7412];
 
             % Create GridLayout23
             app.GridLayout23 = uigridlayout(app.GridLayout20);
@@ -1407,14 +1400,14 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             app.GridLayout23.RowHeight = {'1x', '1x', '1x'};
             app.GridLayout23.Layout.Row = 1;
             app.GridLayout23.Layout.Column = 2;
+            app.GridLayout23.BackgroundColor = [0 0.4471 0.7412];
 
-            % Create ClearHistoryButton
-            app.ClearHistoryButton = uibutton(app.GridLayout23, 'push');
-            app.ClearHistoryButton.ButtonPushedFcn = createCallbackFcn(app, @ClearHistoryButtonPushed, true);
-            app.ClearHistoryButton.WordWrap = "on";
-            app.ClearHistoryButton.Layout.Row = 2;
-            app.ClearHistoryButton.Layout.Column = 1;
-            app.ClearHistoryButton.Text = 'Borrar Historial';
+            % Create BorarHistoriaButton
+            app.BorarHistoriaButton = uibutton(app.GridLayout23, 'push');
+            app.BorarHistoriaButton.ButtonPushedFcn = createCallbackFcn(app, @BorarHistoriaButtonPushed, true);
+            app.BorarHistoriaButton.Layout.Row = 2;
+            app.BorarHistoriaButton.Layout.Column = 1;
+            app.BorarHistoriaButton.Text = 'Borar Historia';
 
             % Create GridLayout24
             app.GridLayout24 = uigridlayout(app.GridLayout20);
@@ -1425,14 +1418,13 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
 
             % Create AnalysisFeedback
             app.AnalysisFeedback = uilabel(app.GridLayout24);
-            app.AnalysisFeedback.WordWrap = 'on';
             app.AnalysisFeedback.Layout.Row = 1;
             app.AnalysisFeedback.Layout.Column = 2;
             app.AnalysisFeedback.Interpreter = 'latex';
             app.AnalysisFeedback.Text = 'Retroalimentación de Análisis';
 
             % Show the figure after all components are created
-            app.CalculusFlashcardsAppUIFigure.Visible = 'on';
+            app.AplicacindeTarjetasdeClculoUIFigure.Visible = 'on';
         end
     end
 
@@ -1446,7 +1438,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             createComponents(app)
 
             % Register the app with App Designer
-            registerApp(app, app.CalculusFlashcardsAppUIFigure)
+            registerApp(app, app.AplicacindeTarjetasdeClculoUIFigure)
 
             % Execute the startup function
             runStartupFcn(app, @StartupFunction)
@@ -1460,7 +1452,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
         function delete(app)
 
             % Delete UIFigure when app is deleted
-            delete(app.CalculusFlashcardsAppUIFigure)
+            delete(app.AplicacindeTarjetasdeClculoUIFigure)
         end
     end
 end
