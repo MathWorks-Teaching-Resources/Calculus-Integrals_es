@@ -478,7 +478,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
                 else
                     grammarChoice = "problemas fueron";
                 end
-                str = compose("Tasa de éxito general: %.1f%% basada en %i problemas diferentes. %i %s omitidos. \n" + ...
+                str = compose("Tasa de éxito general: %.1f\\%% basada en %i problemas diferentes. %i %s omitidos. \n" + ...
                     "Continúa practicando haciendo clic en la pestaña 'Problemas de Práctica'.\n\n" + ...
                     "Desglose por tipo: \n",overallRight,sum(app.generatedProbs),overallNumSkipped,grammarChoice);
                 % Setting up for later
@@ -494,7 +494,7 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
                     if app.generatedProbs(k) == 0
                         str = str + compose("%s: No se han generado problemas de este tipo aún. ",longName); 
                     else
-                        str = str + compose("%s: %i solución(es) enviada(s) de las cuales %.1f%% fueron incorrectas. ", ...
+                        str = str + compose("%s: %i solución(es) enviada(s) de las cuales %.1f\\%% fueron incorrectas. ", ...
                             longName,app.errorCount(k)+app.numCorrect(k),subPctWrong(k));
                     end
                     % If problems of this type have been resubmitted, give
@@ -1181,13 +1181,13 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             % Create variousButton
             app.variousButton = uiradiobutton(app.VariableOptionsButtonGroup);
             app.variousButton.Text = 'varios';
-            app.variousButton.Position = [76 27 61 22];
+            app.variousButton.Position = [76 12 61 22];
             app.variousButton.Value = true;
 
             % Create xortButton
             app.xortButton = uiradiobutton(app.VariableOptionsButtonGroup);
             app.xortButton.Text = 'x o t';
-            app.xortButton.Position = [239 27 65 22];
+            app.xortButton.Position = [239 12 65 22];
 
             % Create ShowsolutionsButtonGroup
             app.ShowsolutionsButtonGroup = uibuttongroup(app.GridLayout18);
@@ -1202,13 +1202,13 @@ classdef TarjetasDeCalculo < matlab.apps.AppBase
             % Create YesButton
             app.YesButton = uiradiobutton(app.ShowsolutionsButtonGroup);
             app.YesButton.Text = 'Sí';
-            app.YesButton.Position = [97 27 58 22];
+            app.YesButton.Position = [97 12 58 22];
             app.YesButton.Value = true;
 
             % Create NoButton
             app.NoButton = uiradiobutton(app.ShowsolutionsButtonGroup);
             app.NoButton.Text = 'No';
-            app.NoButton.Position = [225 27 65 22];
+            app.NoButton.Position = [225 12 65 22];
 
             % Create GridLayout22
             app.GridLayout22 = uigridlayout(app.GridLayout12);
