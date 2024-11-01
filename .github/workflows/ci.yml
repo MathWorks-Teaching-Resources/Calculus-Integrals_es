@@ -58,6 +58,7 @@ jobs:
 
       # Upload the test results as artifact
       - name: Upload TestResults
+        if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
           name: TestResults_${{ matrix.MATLABVersion }}
