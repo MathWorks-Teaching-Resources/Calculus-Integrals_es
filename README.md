@@ -29,7 +29,7 @@ Las instrucciones dentro de los live scripts te guiarán a través de los ejerci
 
 
 ## Contáctanos
-Las soluciones están disponibles a petición del instructor. Contacta al [equipo de recursos didácticos de MathWorks](mailto:onlineteaching@mathworks.com) si deseas solicitar soluciones, proporcionar retroalimentación o si tienes alguna pregunta.
+Contacte al equipo de [MathWorks Educator Content Development](mailto:onlineteaching@mathworks.com) si desea solicitar asistencia, proporcionar comentarios, o si tiene alguna pregunta.
 
 <a name="H_30BC7141"></a>
 
@@ -105,7 +105,7 @@ O siéntase libre de explorar nuestro otro [contenido de material didáctico mod
 
 # Contribuir
 
-¿Buscas más? ¿Encontraste un problema? ¿Tienes una sugerencia? Por favor, contacta al [equipo de recursos didácticos de MathWorks](mailto:%20onlineteaching@mathworks.com). Si quieres contribuir directamente a este proyecto, puedes encontrar información sobre cómo hacerlo en la página de [CONTRIBUTING.md](https://github.com/MathWorks-Teaching-Resources/Calculus-Integrals_es/blob/release/CONTRIBUTING.md) en GitHub.
+¿Buscas más? ¿Encontraste un problema? ¿Tienes una sugerencia? Por favor, contacta al [equipo de MathWorks Educator Content Development](mailto:%20onlineteaching@mathworks.com). Si quieres contribuir directamente a este proyecto, puedes encontrar información sobre cómo hacerlo en la página de [CONTRIBUTING.md](https://github.com/MathWorks-Teaching-Resources/Calculus-Integrals_es/blob/release/CONTRIBUTING.md) en GitHub.
 
 
- *©* Derechos de autor 2023 The MathWorks™, Inc
+ *©* Derechos de autor 2025 The MathWorks, Inc
